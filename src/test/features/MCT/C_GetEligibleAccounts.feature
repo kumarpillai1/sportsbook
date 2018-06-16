@@ -1,7 +1,7 @@
 Feature: 4. Check Customer Eligible accounts
   As a PO I want to check list of eligible accounts for the customers to pay the repayments.
 
-  @MCT3 @CERT
+  @MCT @CERT
   Scenario Outline: "<TestCase>"
   As a Customer I want to check my Personal loan eligibility Without FIRST Account.
 
@@ -14,13 +14,13 @@ Feature: 4. Check Customer Eligible accounts
     Examples:
       |TestCase                                                   |XLSheetName|
       |Check Customer with one First Acc and multiple CC And Saving accounts      |GetEligibleAccounts|
-#      |Check Customer with One First acc and multiple CC And Saving accounts and CC Joint accounts|GetEligibleAccounts|
-#      |Check Customer with One First acc and 2 saving accounts|GetEligibleAccounts|
-#      | Check Customer with One First acc and 1 saving account|GetEligibleAccounts|
-#      | Check Customer with 3 First accounts and 1 saving account|GetEligibleAccounts|
-#      | Check Customer with only one First Account|GetEligibleAccounts|
-#      |Check Customer with only one First Account1|GetEligibleAccounts|
-#
+      |Check Customer with One First acc and multiple CC And Saving accounts and CC Joint accounts|GetEligibleAccounts|
+      |Check Customer with One First acc and 2 saving accounts|GetEligibleAccounts|
+      | Check Customer with One First acc and 1 saving account|GetEligibleAccounts|
+      | Check Customer with 3 First accounts and 1 saving account|GetEligibleAccounts|
+      | Check Customer with only one First Account|GetEligibleAccounts|
+      |Check Customer with only one First Account1|GetEligibleAccounts|
+
 
 
 

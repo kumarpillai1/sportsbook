@@ -335,7 +335,7 @@
 								<include>${runSuite}</include>
 							</includes>
 							<systemPropertyVariables>
-								<cucumber.options>--tags @MCT3</cucumber.options>
+								<cucumber.options>--tags @MCT</cucumber.options>
 							</systemPropertyVariables>
 						</configuration>
 					</plugin>
