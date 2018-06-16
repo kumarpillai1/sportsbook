@@ -88,9 +88,9 @@ public class Report {
         ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
         Reportable result = reportBuilder.generateReports();
 
-       /*  Report appZip = new Report();
+        Report appZip = new Report();
          appZip.generateFileList(new File(SOURCE_FOLDER));
-          appZip.zipIt(OUTPUT_ZIP_FILE);*/
+          appZip.zipIt(OUTPUT_ZIP_FILE);
 
 /*
 
