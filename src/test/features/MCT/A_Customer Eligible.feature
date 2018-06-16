@@ -1,7 +1,7 @@
 Feature: 1.Check Customer Loan Eligibility
   As a PO I want to check Customer Personal Loan Eligibility Status for different types of customers.
 
-  @MCT  @CERT
+  @MCT2 @CERT
   Scenario Outline: "<TestCase>"
   As a Customer I want to check my Personal loan eligibility if I have all valid
 #Pre-Condition Get The Pre-Auth Limit from SAPI
@@ -22,7 +22,7 @@ Feature: 1.Check Customer Loan Eligibility
       |TestCase                                                                   |XLSheetName|
       |Check the Eligibility|Eligibility                                                      |
 
-   @MCT @CERT
+   @MCT2 @CERT
   Scenario Outline: "<TestCase>"
   As a Customer I want to check my Personal loan eligibility if I have all valid
 
@@ -40,7 +40,7 @@ Feature: 1.Check Customer Loan Eligibility
       |TestCase                                     |XLSheetName|
       |Check the Intrest rates for Eligible Customer|Eligibility|
 
-   @MCT @CERT
+   @MCT2 @CERT
   Scenario Outline: "<TestCase>"
   As a Customer I want to check my Personal loan eligibility if I have all valid
 
@@ -63,7 +63,7 @@ Feature: 1.Check Customer Loan Eligibility
       |Check the Eligibility1|Eligibility|
 
 
-  @MCT @CERT
+  @MCT2 @CERT
   Scenario Outline: "<TestCase>"
   As a Customer I want to check my Personal loan eligibility if I have all valid
 
@@ -76,7 +76,7 @@ Feature: 1.Check Customer Loan Eligibility
       |Check Customer with All valid data but Inhebit marker as Z|Eligibility|
       |Check Customer with refer marker E is eligible|Eligibility|
 
-  @MCT @CERT
+  @MCT2 @CERT
   Scenario Outline: "<TestCase>"
   As a Customer I want to check my Personal loan eligibility if I have all valid
 
@@ -93,7 +93,7 @@ Feature: 1.Check Customer Loan Eligibility
       |Check Check Customer with All valid data but Inhebit marker as I|Eligibility|
 
 
-  @MCT @CERT
+  @MCT2 @CERT
   Scenario Outline: "<TestCase>"
   As a Customer I want to check my Personal loan eligibility if I have all valid
 
@@ -113,7 +113,7 @@ Feature: 1.Check Customer Loan Eligibility
 
 
 
-  @MCT @CERT
+  @MCT2 @CERT
   Scenario Outline: "<TestCase>"
   As a Customer I want to check my Personal loan eligibility if i have all valid but Different Reffer markers.
 

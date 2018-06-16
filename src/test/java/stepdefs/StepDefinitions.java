@@ -343,8 +343,11 @@ if(tcname.contains("Invalid Quotation")){
 
     @When("^a user retrieves the eligibility info1$")
     public void a_user_retrieves_the_eligible_Info111() {
+
         String environment1 = System.getProperty("environment");
-        String EligibilityEAPI=String.format(prop.getProperty("ServerName"),environment1).concat("/personal-loans/eligibility");
+        String pla_version=System.getProperty("pla_version");
+        String host=prop.getProperty("ServerName").replace("{version}",pla_version);
+        String EligibilityEAPI=String.format(host,environment1).concat("/personal-loans/eligibility");
         scenario.write("API used "+EligibilityEAPI);
         response = request.when().get(EligibilityEAPI);
 

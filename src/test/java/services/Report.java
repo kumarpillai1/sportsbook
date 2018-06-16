@@ -92,16 +92,11 @@ public class Report {
          appZip.generateFileList(new File(SOURCE_FOLDER));
           appZip.zipIt(OUTPUT_ZIP_FILE);
 
-/*
+   // Update Test Results to Zephyr
 
-            // create the API client instance
-           Pdfcrowd.HtmlToImageClient client = new Pdfcrowd.HtmlToImageClient("suresh409", "afd0b6c2531817e05e137c73d802b77d");
-             // configure the conversion
-              client.setOutputFormat("png");
+            UpdateResultsInZephyr.UpdateTestResultsInZephys();
 
-             // run the conversion and write the result to a file
-            client.convertFileToFile(projectpath+"/target/cucumber-html-reports/overview-features.html", "MyLayout.png");
-*/
+
 
 /*
 
