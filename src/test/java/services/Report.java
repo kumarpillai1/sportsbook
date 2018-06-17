@@ -94,7 +94,7 @@ public class Report {
 
    // Update Test Results to Zephyr
 
-           // UpdateResultsInZephyr.UpdateTestResultsInZephys();
+            UpdateResultsInZephyr.UpdateTestResultsInZephys();
 
 
 

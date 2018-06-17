@@ -22,9 +22,9 @@ public class UpdateResultsInZephyr {
     static String versionname = "fd Personal Loan Apply 2.0";
     static String cyclename = "PLA-API-Automation-Regression_";
 
-    public static void main(String[] args) throws Exception {
+    //public static void main(String[] args) throws Exception {
 
-    //public static void UpdateTestResultsInZephys() throws  Exception{
+    public static void UpdateTestResultsInZephys() throws  Exception{
 //Get the Today date and time in specific format
         DateFormat dateFormat = new SimpleDateFormat("EEE-MMM-dd-yyyy-HH:ss");
         Calendar cal = Calendar.getInstance();
