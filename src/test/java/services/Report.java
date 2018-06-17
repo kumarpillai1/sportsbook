@@ -94,46 +94,9 @@ public class Report {
 
    // Update Test Results to Zephyr
 
-            UpdateResultsInZephyr.UpdateTestResultsInZephys();
+          ZephyrHelper z = new ZephyrHelper();
+          z.ReadTestCaseFromZephyrCycleAndUpdateTheStatus();
 
-
-
-/*
-
-          System.setProperty("webdriver.ie.driver", "C:\\SWDTOOLS\\Selenium\\bin\\IEDriverServer.exe");
-          WebDriver driver = new InternetExplorerDriver();
-          driver.manage().window().maximize();
-          driver.get("https://digital-confluence.systems.uk.hsbc/confluence/display/FTT/Personal+Loan+API+Test+Results");
-
-         // driver.findElement(By.linkText(System.getProperty("environment"))).click();
-          //driver.findElement(By.linkText("SCT")).click();
-          driver.navigate().to("https://digital-confluence.systems.uk.hsbc/confluence/pages/viewpageattachments.action?pageId=87910196&metadataLink=true");
-            Thread.sleep(10000);
-
-          //driver.findElement(By.xpath("//[@id='content-metadata-attachments']")).click();
-System.out.println(OUTPUT_ZIP_FILE);
-
-
-          driver.findElement(By.id("file_0")).sendKeys(OUTPUT_ZIP_FILE);
-
-          driver.findElement(By.name("confirm")).click();
-          Thread.sleep(5000);
-          //driver.findElement(By.linkText(System.getProperty("environment"))).click();
-          driver.findElement(By.linkText("SCT")).click();
-          Thread.sleep(5000);
-          //driver.findElement(By.xpath("//div[@class='quick-comment-prompt']/span")).submit();
-          driver.findElement(By.xpath("//div[@class='quick-comment-prompt']/span")).click();
-          driver.findElement(By.xpath("//div[@class='quick-comment-prompt']/span")).sendKeys("test");
-          Thread.sleep(3000);
-        String finalReportLink = linkaddress+filename;
-          driver.findElement(By.id("rte-button-link"));
-          Thread.sleep(5000);
-          driver.findElement(By.className("weblink-destination")).sendKeys(finalReportLink);
-          String x = "Click here for "+filename+ "Results Download";
-          driver.findElement(By.id("weblink-destination")).sendKeys(x);
-
-
-*/
 
     }
 
