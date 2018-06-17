@@ -22,9 +22,9 @@ public class UpdateResultsInZephyr {
     static String versionname = "fd Personal Loan Apply 2.0";
     static String cyclename = "PLA-API-Automation-Regression_";
 
-    //public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-    public static void UpdateTestResultsInZephys() throws  Exception{
+    //public static void UpdateTestResultsInZephys() throws  Exception{
 //Get the Today date and time in specific format
         DateFormat dateFormat = new SimpleDateFormat("EEE-MMM-dd-yyyy-HH:ss");
         Calendar cal = Calendar.getInstance();
@@ -75,7 +75,7 @@ public class UpdateResultsInZephyr {
 
         for(int i=0;i<testCaseNames.size();i++){
             System.out.println("Test case Name in Zephyr cycle :"+testCaseNames.get(i)+"And Test case Id is :"+testCaseIds.get(i));
-           String TCStatusINJsonReport =  ReadTestCaseStatusFromJson.GetTestCaseStatus(testCaseNames.get(i).toString().trim());
+           String TCStatusINJsonReport = ReadTestCaseStatusFromJson.GetTestCaseStatus(testCaseNames.get(i).toString().trim());
             if(TCStatusINJsonReport.equalsIgnoreCase("passed")){
                 Result="1";
             }else if(TCStatusINJsonReport.equalsIgnoreCase("failed")){

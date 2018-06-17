@@ -107,9 +107,8 @@ public class StepDefinitions {
         }
         else{
 
-            XlPathName = prop.getProperty("APITestUsing_MCTandCERT");
+            XlPathName = prop.getProperty("XlPathNameMCT");
         }
-
 
    }
 
@@ -123,11 +122,9 @@ public class StepDefinitions {
             scenario.write("Input Used for this Request:"+ quotbody);
             String s = response.body().prettyPrint();
             scenario.embed(s.getBytes(),"text/html");
+
             logger.error("Scenario :"+scenario.getName() +"Ended....And STATUS IS: "+scenario.getStatus());
         }else {
-            scenario.write("The EAPI Name:" + APIUrl);
-            scenario.write("The SAML Token Used:" + newSamlToken);
-            scenario.write("Input Used for this Request:"+ quotbody);
             String s = response.body().prettyPrint();
             scenario.embed( s.getBytes(),"text/html");
             logger.info("Scenario :"+scenario.getName() +"Ended....And STATUS IS: "+scenario.getStatus());
