@@ -2,10 +2,7 @@ package options;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import org.junit.AfterClass;
 import org.junit.runner.RunWith;
-import org.testng.annotations.AfterSuite;
-import services.Report;
 
 
 @RunWith(Cucumber.class)
@@ -13,7 +10,7 @@ import services.Report;
         plugin = {"pretty"},
         glue = {"stepdefs"},
         features = {"src/test/features"},
-              //tags = "@MCT",
+              //tags = "@wip",
         format={
                 "html:target/cucumber-reports",
                 "json:target/json/cucumber.json"

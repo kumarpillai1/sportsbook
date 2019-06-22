@@ -1,4 +1,4 @@
-package automation;
+package helper;
 
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
 

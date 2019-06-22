@@ -10,29 +10,10 @@ Feature: As a User
 
 
   @Football @Events
-  Scenario Outline: "<TestCase>" NewTestCase
+  Scenario: "<TestCase>" NewTestCase
   As a customer check the live events offered
     Given local environment is up and running
+    Then The status code is 200
     Then check the response contains only football events
-    Examples:
-      | TestCase                                      | XLSheetName |
-      | Check the Intrest rates for Eligible Customer | Eligibility |
+    And verify "Home and Away" competitor is available for all events
 
-
-  Scenario: 1 - New Cars Search Page Navigation
-    Given As a user I log into Home page
-    When I click on FootBall events
-    Then I select "FootBall Game"
-
-  Scenario: 2 - Search options in New Car Search Page
-    Given As a user I am on Home page
-    Then I log into the application
-    Then user is able to select market "Both Teams To Score"
-    Then check market is selected and available to place bet
-
-  Scenario: 2 - Search options in New Car Search Page
-    Given As a user I am on Home page
-    Then I log into the application
-    Then user is able to select market "Both Teams To Score"
-    Then check market is selected
-    Then place a bet

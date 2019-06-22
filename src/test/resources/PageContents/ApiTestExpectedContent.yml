@@ -1,2 +1,5 @@
-FootballEventsPage:
 
+MyStepdefs:
+    football : Football
+    home : home
+    away : away
