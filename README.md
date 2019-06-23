@@ -49,10 +49,11 @@ I will covering below test scenarios as well
 6) Dynamic market variation
 
 
-# Api Validation:
-Endpoint not available 404
-Bad request 400
-Server related errors 500
+# Api Validation to include below scenarios:
+Examples and its response code
+Endpoint not available :  404
+Bad request : 400
+Server related errors : 500
 
 # Negative scenario Testing
 With the test data given, I am  able to think of few negative scenarios for now.
