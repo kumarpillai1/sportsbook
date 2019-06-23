@@ -13,6 +13,7 @@ Feature: As a User
     Given environment is up and running
     When As a user I am on Home page
     Then I log into the application
+    Then select the event
     Then user is able to select market "Both Teams To Score"
     Then check market is selected and available to place bet
 
