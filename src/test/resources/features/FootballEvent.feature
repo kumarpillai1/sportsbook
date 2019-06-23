@@ -16,8 +16,15 @@ Feature: As a User
     Then user is able to select market "Both Teams To Score"
     Then check market is selected and available to place bet
 
+
+  @Football @Events @loadHomepage
+  Scenario: 2 - Load Home page
+    Given As a user I am on Home page
+    Then I log into the application
+    Then I can see markets and events are loaded
+
   @Football @Events @placebet
-  Scenario: 2 - place a bet
+  Scenario: 3 - place a bet
     Given As a user I am on Home page
     Then I log into the application
     Then user is able to select market "Both Teams To Score"
