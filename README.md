@@ -1,7 +1,9 @@
 # Sportsbook UI Automation Test
 
 
-To Run the test, please download the maven dependencies. To run via maven, mvn clean install , or mvn clean test.
+To Run the test, please download the maven dependencies. 
+Add a maven project
+To run via maven, mvn clean install , or mvn clean test.
 
 
 Technologies used:
