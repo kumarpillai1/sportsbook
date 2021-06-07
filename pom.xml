@@ -21,7 +21,7 @@
         <maven.compiler.version>3.6.1</maven.compiler.version>
         <maven.failsafe.plugin.version>2.19.1</maven.failsafe.plugin.version>
         <maven.surefire.plugin.version>2.19.1</maven.surefire.plugin.version>
-        <logback.version>1.1.9</logback.version>
+        <logback.version>1.2.0</logback.version>
         <slf4j.version>1.7.22</slf4j.version>
         <cucumber.jvm.parallel.version>2.2.0</cucumber.jvm.parallel.version>
         <wiremock.version>2.5.1</wiremock.version>
